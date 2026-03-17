@@ -158,6 +158,8 @@
 }
 
 @utility container {
-  max-width: 80%;
+  max-width: 90%;
   margin-inline: auto;
+
+    @variant sm { max-width: 80%; }
 }
