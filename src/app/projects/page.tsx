@@ -5,32 +5,34 @@ import { ProjectCard } from "@/components/portfolio/project-card";
 
 const projects = [
   {
-    title: "Portfolio Platform",
+    title: "Expense Tracker",
     description:
-      "A modern portfolio with route-based sections, reusable components, and theme support.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    href: "#",
+      "A personal finance management platform built with React + TypeScript (frontend) and NestJS + PostgreSQL (backend) that lets users manage multiple wallets with multi-currency support, track income & expenses with customizable categories featuring spending limits (weekly, monthly, yearly), monitor subscriptions, automate salary deposits on set dates, and execute transfers between wallets with live currency conversion.",
+    stack: ["React", "Nest.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+    live: "expense-tracker-adrian.vercel.app",
+    source: "https://github.com/adrian-237/ExpenseTracker",
   },
   {
-    title: "Design System Kit",
+    title: "Personal Movie Library",
     description:
-      "Reusable UI building blocks for faster development and consistent product experiences.",
-    stack: ["React", "shadcn/ui", "Storybook"],
-    href: "#",
+      "Movie Circle - A modern media discovery & collections app built with Next.js + TypeScript featuring route-based sections, reusable UI components, and theme support, where you can browse/discover movies & TV shows, build personal collections (watchlists, favorites, etc.), share collections with friends via controlled links, and manage your profile + auth while exploring detailed media info like cast, reviews, and similar titles.",
+    stack: ["React", "shadcn/ui", "Next.js", "Tailwind CSS"],
+    live: "movie-circle.vercel.app ",
+    source: "https://github.com/adrian-237/movie-circle",
   },
   {
-    title: "Data Dashboard",
+    title: "English School Dynamic Landing Page",
     description:
-      "Responsive analytics dashboard focused on clear hierarchy and smooth interactions.",
-    stack: ["Next.js", "Charts", "Tailwind CSS"],
-    href: "#",
+      "An English language school platform built with Next.js and TypeScript (frontend) and Payload CMS with PostgreSQL (headless backend). It features a fully dynamic landing page where admins can manage all content (sections, images, links, colors), courses (levels, types, pricing, promotions), and includes student applications, retakes, feedback forms, and CRM integration to capture and track all leads.",
+    stack: ["React", "Payload CMS", "Tailwind CSS", "shadcn/ui"],
+    live: "https://www.expertschool.md/",
   },
   {
-    title: "Landing Experience",
+    title: "Companny Information Website",
     description:
-      "Conversion-focused landing page with animations and polished responsive layouts.",
-    stack: ["React", "Framer Motion", "CSS"],
-    href: "#",
+      "A Next.js + TypeScript app with Payload CMS headless backend and PostgreSQL database featuring a multilingual (EN, RO, RU) website with a dynamic blog page integrated with backend for articles management, contact forms with email notifications via Nodemailer, and SEO optimization using Schema.org structured data. Built with shadcn components, Tailwind CSS, and next-intl for localization.",
+    stack: ["React", "Payload CMS", "Tailwind CSS", "shadcn/ui"],
+    live: "https://slavena.md/",
   },
 ] as const;
 

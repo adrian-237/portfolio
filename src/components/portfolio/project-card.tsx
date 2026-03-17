@@ -5,7 +5,8 @@ type Project = {
   title: string;
   description: string;
   stack: readonly string[];
-  href: string;
+  live?: string;
+  source?: string;
 };
 
 type ProjectCardProps = {
@@ -19,20 +20,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <h3 className="text-lg font-semibold text-foreground">
           {project.title}
         </h3>
-        <Link
-          href={project.href}
-          className="text-primary hover:text-primary/80"
-          aria-label={`Open ${project.title}`}
-        >
-          <ArrowUpRight className="h-4 w-4" />
-        </Link>
       </div>
 
       <p className="text-sm text-muted-foreground leading-relaxed mb-4">
         {project.description}
       </p>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 mb-4">
         {project.stack.map((item) => (
           <span
             key={item}
@@ -41,6 +35,29 @@ export function ProjectCard({ project }: ProjectCardProps) {
             {item}
           </span>
         ))}
+      </div>
+
+      <div className="flex gap-2">
+        {project.live && (
+          <Link
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-md bg-primary text-primary-foreground text-xs font-medium hover:bg-primary/90 transition-colors"
+          >
+            Live Demo <ArrowUpRight className="h-3 w-3" />
+          </Link>
+        )}
+        {project.source && (
+          <Link
+            href={project.source}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 px-3 py-1.5 rounded-md border border-border text-xs font-medium hover:bg-muted transition-colors"
+          >
+            Source Code <ArrowUpRight className="h-3 w-3" />
+          </Link>
+        )}
       </div>
     </article>
   );
