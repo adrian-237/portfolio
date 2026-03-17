@@ -6,7 +6,6 @@ const socialIcons = [
   { icon: Github, href: "https://github.com/adrian-237/", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
   { icon: Mail, href: "mailto:boronciuc.adrian@gmail.com", label: "Email" },
-  { icon: ExternalLink, href: "#", label: "Portfolio" },
 ];
 
 export default function Home() {
@@ -29,8 +28,8 @@ export default function Home() {
             </h1>
 
             <p className="text-lg sm:text-xl text-foreground font-medium mb-3">
-              Frontend developer passionate about building clean, interactive,
-              and user-focused web experiences.
+              Frontend developer passionate about building interactive and
+              user-focused web experiences.
             </p>
 
             <div className="flex items-center justify-center md:justify-start gap-2 text-muted-foreground mb-6">
