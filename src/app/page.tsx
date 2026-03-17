@@ -51,7 +51,7 @@ export default function Home() {
 
           <div className="relative">
             <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full border-4 border-primary/60 overflow-hidden bg-linear-to-br from-primary/30 to-blue-600/20 flex items-center justify-center shadow-lg shadow-primary/20">
-              <div className="text-6xl font-bold text-primary/80">FD</div>
+              <div className="text-6xl font-bold text-primary/80">AB</div>
             </div>
           </div>
         </div>
