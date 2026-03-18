@@ -4,7 +4,11 @@ import { SocialLink } from "@/components/portfolio/social-link";
 
 const socialIcons = [
   { icon: Github, href: "https://github.com/adrian-237/", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/adrian-boronciuc-434a3935b/",
+    label: "LinkedIn",
+  },
   { icon: Mail, href: "mailto:boronciuc.adrian@gmail.com", label: "Email" },
 ];
 
@@ -16,14 +20,9 @@ export default function Home() {
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 leading-tight">
               <span className="text-foreground">{"Hey "}</span>
-              <span className="text-3xl sm:text-4xl lg:text-5xl">{"👋"}</span>
               <span className="text-foreground">{", I'm "}</span>
-              <span className="bg-linear-to-r from-blue-400 via-purple-500 to-blue-400 bg-clip-text text-transparent">
-                Frontend
-              </span>
-              <br />
-              <span className="bg-linear-to-r from-blue-400 via-purple-500 to-blue-400 bg-clip-text text-transparent">
-                Developer
+              <span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                Boronciuc Adrian
               </span>
             </h1>
 
@@ -51,7 +50,11 @@ export default function Home() {
 
           <div className="relative">
             <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-full border-4 border-primary/60 overflow-hidden bg-linear-to-br from-primary/30 to-blue-600/20 flex items-center justify-center shadow-lg shadow-primary/20">
-              <div className="text-6xl font-bold text-primary/80">AB</div>
+              <img
+                src="/img.jpg"
+                alt="Adrian Boronciuc"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

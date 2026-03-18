@@ -16,7 +16,7 @@ const socialLinks = [
     description: "boronciuc.adrian@gmail.com",
   },
   {
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/adrian-boronciuc-434a3935b/",
     icon: Linkedin,
     label: "LinkedIn",
     description: "View LinkedIn profile",
